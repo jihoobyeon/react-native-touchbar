@@ -2,8 +2,7 @@
 const createReactNativeComponentClass = require('react-native/Libraries/Renderer/shims/createReactNativeComponentClass');
 
 const NativeRNTouchbar = createReactNativeComponentClass('TouchBar', () => {
-  uiViewClassName: 'RNTouchbar',
-  validAttributes: {}
+  uiViewClassName: 'RNTouchbar'
 });
 
 export default NativeRNTouchbar;
