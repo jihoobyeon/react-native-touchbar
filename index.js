@@ -1,7 +1,6 @@
-//import { createReactNativeComponentClass } from 'react-native-macos';
 const createReactNativeComponentClass = require('react-native/Libraries/Renderer/shims/createReactNativeComponentClass');
 
-const NativeRNTouchbar = createReactNativeComponentClass('TouchBar', () => ({
+const NativeRNTouchbar = createReactNativeComponentClass('RNTouchbar', () => ({
    validAttributes: {},
    uiViewClassName: 'RNTouchbar'
  }));
