@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <Cocoa/Cocoa.h>
 
-#import "RCTViewManager.h"
+#import <React/RCTViewManager.h>
 
 @interface RNTouchbarManager : RCTViewManager
 @end
