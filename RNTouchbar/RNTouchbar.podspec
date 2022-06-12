@@ -19,5 +19,4 @@ Pod::Spec.new do |s|
   s.preserve_paths  = "**/*.js"
 
   s.dependency 'React/RCTViewManager'
-  s.dependency 'React/RCTEventDispatcher'
 end
