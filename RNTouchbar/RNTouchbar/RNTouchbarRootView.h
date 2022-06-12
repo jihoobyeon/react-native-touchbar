@@ -6,7 +6,7 @@
 //  Copyright © 2016 React Native Community. All rights reserved.
 //
 #import <Cocoa/Cocoa.h>
-#import "NSView+React.h"
+#import "UIView+React.h"
 #import <React/RCTEventDispatcher.h>
 
 @interface NSWindow (Touchbar) <NSTouchBarDelegate>
