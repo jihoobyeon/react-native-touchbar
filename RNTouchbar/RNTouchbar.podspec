@@ -3,7 +3,7 @@ pjson = JSON.parse(File.read('../package.json'))
 
 Pod::Spec.new do |s|
 
-  s.name            = "RNFS"
+  s.name            = "RNTouchbar"
   s.version         = pjson["version"]
   s.homepage        = "https://github.com/jihoobyeon/react-native-touchbar"
   s.summary         = pjson["description"]
