@@ -18,7 +18,5 @@ Pod::Spec.new do |s|
   s.source_files    = '*.{h,m}'
   s.preserve_paths  = "**/*.js"
 
-  s.dependency 'RCTViewManager'
-  s.dependency 'RCTEventDispatcher'
-  s.dependency 'RCTShadowView'
+  s.dependency 'React'
 end
