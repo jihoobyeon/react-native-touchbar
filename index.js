@@ -2,7 +2,7 @@ const createReactNativeComponentClass = require('react-native/Libraries/Renderer
 
 const NativeRNTouchbar = createReactNativeComponentClass('TouchBar', () => ({
    validAttributes: {},
-   uiViewClassName: 'TouchBar'
+   uiViewClassName: 'RNTouchbar'
  }));
 
 export default NativeRNTouchbar;
