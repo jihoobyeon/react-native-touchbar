@@ -8,6 +8,7 @@
 
 #import "RNTouchbarManager.h"
 #import "RNTouchbarRootView.h"
+#import <React/RCTViewManager.h>
 
 @implementation RNTouchbarManager
 
