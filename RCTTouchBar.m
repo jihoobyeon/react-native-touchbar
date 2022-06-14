@@ -1,6 +1,5 @@
 //
-//  RNTouchbar.m
-//  RNTouchbar
+//  RCTTouchbar.m
 //
 //  Created by Dmitriy Loktev on 10/28/16.
 //  Rearranged by Jihoo Byeon on 6/14/22
