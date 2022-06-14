@@ -13,9 +13,9 @@
 
 RCT_EXPORT_MODULE()
 
-- (NSView *)view
+- (UIView *)view
 {
-    NSView *view = [[RNTouchbarRootView alloc] initWithEventDispatcher:self.bridge.eventDispatcher];
+    UIView *view = [[RNTouchbarRootView alloc] initWithEventDispatcher:self.bridge.eventDispatcher];
     return view;
 }
 
