@@ -8,15 +8,14 @@
 
 #import "RNTouchbarManager.h"
 #import "RNTouchbarRootView.h"
-#import <React/RCTViewManager.h>
 
 @implementation RNTouchbarManager
 
 RCT_EXPORT_MODULE()
 
-- (UIView *)view
+- (NSView *)view
 {
-    UIView *view = [[RNTouchbarRootView alloc] initWithEventDispatcher:self.bridge.eventDispatcher];
+    NSView *view = [[RNTouchbarRootView alloc] initWithEventDispatcher:self.bridge.eventDispatcher];
     return view;
 }
 
