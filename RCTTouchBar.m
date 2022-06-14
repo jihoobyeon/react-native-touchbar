@@ -1,5 +1,5 @@
 //
-//  RCTTouchbar.m
+//  RCTTouchBar.m
 //
 //  Created by Dmitriy Loktev on 10/28/16.
 //  Rearranged by Jihoo Byeon on 6/14/22
@@ -9,7 +9,7 @@
 #import "RCTTouchBar.h"
 #import <objc/runtime.h>
 
-static NSTouchBarCustomizationIdentifier RCTTouchbarIdentifier = @"RCTTouchbarIdentifier";
+static NSTouchBarCustomizationIdentifier RCTTouchBarIdentifier = @"RCTTouchBarIdentifier";
 
 static void * TouchBarItemsKey = &TouchBarItemsKey;
 
@@ -27,7 +27,7 @@ static void * TouchBarItemsKey = &TouchBarItemsKey;
 {
     NSTouchBar *bar = [[NSTouchBar alloc] init];
     bar.delegate = self;
-    bar.customizationIdentifier = RCTTouchbarIdentifier;
+    bar.customizationIdentifier = RCTTouchBarIdentifier;
 
     // Set the default ordering of items.
     NSMutableArray *ids = [[NSMutableArray alloc] init];
@@ -58,7 +58,7 @@ static void * TouchBarItemsKey = &TouchBarItemsKey;
 
 @end
 
-@implementation RCTTouchbarRootView
+@implementation RCTTouchBarRootView
 {
     NSMutableArray<NSView *> *toolbarItems;
 }
@@ -95,13 +95,13 @@ static void * TouchBarItemsKey = &TouchBarItemsKey;
 
 @end
 
-@implementation RCTTouchbarManager
+@implementation RCTTouchBarManager
 
 RCT_EXPORT_MODULE()
 
 - (NSView *)view
 {
-    NSView *view = [[RCTTouchbarRootView alloc] initWithEventDispatcher:self.bridge.eventDispatcher];
+    NSView *view = [[RCTTouchBarRootView alloc] initWithEventDispatcher:self.bridge.eventDispatcher];
     return view;
 }
 
