@@ -1,8 +1,8 @@
 {
   "name": "react-native-touchbar",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "NSTouchBar wrapper for react-native",
-  "main": "TouchBar.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
