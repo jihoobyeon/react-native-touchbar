@@ -97,7 +97,7 @@ static void * TouchBarItemsKey = &TouchBarItemsKey;
 
 @implementation RCTTouchBarManager
 
-RCT_EXPORT_MODULE()
+RCT_EXPORT_MODULE(RCTTouchBar)
 
 - (NSView *)view
 {
