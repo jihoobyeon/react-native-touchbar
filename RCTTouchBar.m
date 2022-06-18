@@ -66,7 +66,7 @@ static void * TouchBarItemsKey = &TouchBarItemsKey;
 -(instancetype)initWithEventDispatcher:(RCTEventDispatcher *)eventDispatcher
 {
     if ((self = [super initWithFrame:CGRectZero])) {
-        [NSApp mainWindow].touchBarItems = [[NSMutableArray alloc] init];
+        [NSWindow].touchBarItems = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -76,8 +76,8 @@ static void * TouchBarItemsKey = &TouchBarItemsKey;
     [super insertReactSubview:subview atIndex:atIndex];
     NSCustomTouchBarItem *touchItem = [[NSCustomTouchBarItem alloc] initWithIdentifier:subview.reactTag.stringValue];
     touchItem.view = subview;
-    [[NSApp mainWindow].touchBarItems insertObject:touchItem atIndex:atIndex];
-    [NSApp mainWindow].touchBar = nil;
+    [[NSWindow].touchBarItems insertObject:touchItem atIndex:atIndex];
+    [NSWindow].touchBar = nil;
 }
 
 - (void)removeReactSubview:(NSView *)subview
