@@ -47,7 +47,7 @@ static void * TouchBarItemsKey = &TouchBarItemsKey;
     if (!self.touchBarItems || self.touchBarItems.count == 0) {
         return nil;
     }
-    NSCustomTouchBarItem __block *toRender = nil;
+    NSCustomTouchBarItem *customItemForLabel = nil;
     [self.touchBarItems enumerateObjectsUsingBlock:^(id touchItem, NSUInteger index, BOOL *stop) {
         if (((NSCustomTouchBarItem *)touchItem).view.reactTag.stringValue == identifier) {
             toRender = touchItem;
